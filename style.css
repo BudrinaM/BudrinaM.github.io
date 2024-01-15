@@ -1,0 +1,857 @@
+.{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:"Bebasxl";
+    src: url("fonts/BebasNeueBold.ttf");
+}
+@font-face {
+    font-family:"Bebasl";
+    src: url("fonts/bebas_neue_regular.ttf");
+}
+/*________________________________________________________________*/
+
+.page {                        
+    width: 1440px;              /*ширина страницы*/
+    background-color: #0101a3;
+    min-height: 961px;
+    margin: 0 auto;
+
+}
+.log {
+    min-height: 120px;      /*шапка сайта*/
+    border-bottom: 16px solid #e92bde; 
+    padding-left: 58px;        
+    padding-bottom: 39px;
+    padding-right: 56px;
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link {                    /*навигационное меню*/
+    font-family:"Bebasxl";
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fefefe;
+    text-decoration: none;
+    margin-left: 38px;
+}
+.link:hover {        /* изменение при наведении курсора*/
+    color: #e92bde;
+    cursor: pointer;
+}
+.box {
+    width: 100%;
+    height: 961px;
+    display: flex;
+    align-items: center;
+    gap: 69px;
+    background: linear-gradient(180deg, #0101a3 0%, #0101a3 70%, #000048 100%); /*градиент фона*/
+}
+.card {
+    max-width: 440px;  
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 134px;
+    padding-bottom: 220px;
+    width: 100%;   
+}
+.title {                   
+    font-family:'Bebasl';             /*свойство для текста*/
+    font-size: 105px;
+    line-height: 106px;
+    font-weight: 400;
+    color: #fffefe;
+    margin-bottom: 50px;
+    text-decoration: underline 26px #e92bde;
+}           
+.p {                           /*свойство для текста*/
+    font-family:'Bebasl';
+    font-size: 38.2px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #e92bde;
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+.p1 {                            /* свойство для текста*/
+    font-family:'Bebasl';
+    font-size: 34.3px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #fefefe;
+    margin-top: 0px;
+}
+.pic {
+    width: 650px;         /*свойство для картинки*/
+    height: 685px;
+    display: flex;
+    padding-right: 132px;
+    padding-top: 117px;
+    padding-bottom: 159px;
+    
+}
+
+.but {                              /*свойство для кнопки*/
+    background-color: #c92fd9; 
+    width: 202px;
+    height: 54px;
+    cursor: pointer;
+    font-family:'Bebasl';
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+.but:hover {                         /* изменения при наведении на кнопку*/
+    background-color: #e586f0;
+}
+.but:hover ~ .okno {                 /*  всплывающее окно*/
+    background-color: #0101a3;
+    transform:scale(1);
+}
+.okno {
+    width: 300px;                 /* свойство для всплывающего окна*/
+    height: 300px;
+    text-align: center;
+    padding:15px;
+    border: 3px solid #e92bde;
+    border-radius: 10px;
+    color: #fefefe;
+    transform: scale(0);
+    transition: 2s;
+}
+                                               /*второй блок*/
+
+.page1 {
+    max-width: 1440px; /*свойства для страницы в соответствии с макетом*/
+    min-height: 961px;
+    margin: 0 auto;
+    background-color: #0101a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 106px;
+}
+#title1  {
+    font-family: "Bebasxl"; /*свойства для заголовка в соответствии с макетом*/
+    font-size: 62.5px;
+    line-height: 1.2;
+    color: #ffffff;
+    padding-top: 59px;
+    align-items: center;
+    margin-bottom: 0px;                                                 
+}
+.box1 {
+    width: 100%;
+    height: 869px;
+    display: flex;
+    justify-content: center; /*распределение пространства вокруг элементов*/
+    gap: 99px; /*расстояние между карточками*/
+    background:linear-gradient(180deg, #0101a3 0%, #0101a3 70%, #000048 100%);
+}
+.card1 {
+   width: 276px; /*свойства первой карточкии в соответствии с макетом*/
+   min-height: 600px;
+   margin-left: 208px;
+   display: flex;
+   flex-direction: column;
+   gap: 42px;
+}
+.pic1:hover ~ .okno1,                /*изменения при наведении на картинку*/
+.pic1:hover ~ .okno2,
+.pic1:hover ~ .okno3 {
+    background-color: #0101a3;
+    transform: scale(1);
+}
+.okno1, .okno2, .okno3 {             /*свойство всплывающих окон*/
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 15px;
+    border: #e92bde solid 5px;
+    border-radius: 10px;
+    color: #fefefe;
+    transform: scale(0);
+    transition: 2s;
+    position: absolute;
+}
+.card2 {
+   width: 276px; /*свойства в соответствии с макетом*/
+   min-height: 600px;
+   display: flex;
+   flex-direction: column;
+   gap: 42px;
+}
+.card3 {
+    width: 276px; /*свойства в соответствии с макетом*/
+   min-height: 600px;
+   display: flex;
+   flex-direction: column;
+   gap: 42px; /*расстояние от картинки до текста*/
+   margin-right: 206px;
+}
+
+.pic1:hover  { 
+    min-width: 285px; /*свойства в соответствии с макетом*/
+    min-height: 285px;
+    background-color: rgb(239, 165, 228); 
+    border-radius: 60%; /*подсвечивание при наведении курсора*/
+    cursor: pointer; /*курсор мышки меняется при наведении на картинку*/    
+}
+.pic1 img {       /*свойства для всех картинок*/
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;   
+}                                            
+.text2, .text3, .text4 { /*свойства для текста */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+h2 {
+    font-family:"Bebasxl"; /*свойства для текста под картинкой в соответствии с макетом*/
+    font-size: 37.5px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+h3 {
+    font-family:"Bebasl"; /*свойства для текста под картинкой в соответствии с макетом*/
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+                       /*__________________________________3 блок___________________________________________________*/
+
+
+.page2 {
+    max-width: 1440px; /*свойства для страницы в соответствии с макетом*/
+    max-height:8000px;
+    margin: 0 auto;
+    background-color: #0101a3;    
+ }                      
+#title2 {                  /*свойства для заголовка*/
+   font-family:'Bebasxl';
+   font-size: 62.5px;
+   line-height: 62px;
+   font-weight: 700;
+   color: #ffffff;
+   display: flex;
+   padding-left: 629px;
+   padding-right: 630px;
+   gap:35px;
+}
+.card4 { 
+   align-items: center;
+   flex-direction: column;
+}
+.p2 {
+   font-family: 'Bebasl';   /* свойство для текста*/
+   font-size: 29.2px;
+   line-height: 1.2;
+   font-weight: 400;
+   color: #ffffff;
+   padding-left: 380px;
+   padding-right: 381px;
+}
+.box2 {
+    width: 100%;
+    height: 869px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+.pic2 {                        /*свойство для картинки*/
+    width: 1184px;
+    height: 503px;
+    display: flex;
+    padding-left: 129px;
+    padding-right: 127px;
+
+}
+.but1 {
+    width: 202px;                    /*свойство для кнопки*/
+    height: 49px;
+    background-color: #e92bde;
+    margin-top: 74px;
+    font-family:'Bebasl';   
+    font-size: 29.2px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    
+}
+
+
+.but1:hover {                      /* изменение кнопки при наведении*/
+    background-color: #e586f0;
+    cursor: pointer;
+}
+.but1:hover ~ .okno4 {               /*кнопка*/
+    background-color: #0101a3;
+    transform:scale(1);
+    
+}
+.okno4 {              /*всплывающее окно*/
+    width: 200px;
+    height: 350px;
+    text-align: center;
+    padding: 5px;
+    border: #e92bde solid 5px;
+    border-radius: 10px;
+    color: #fefefe;
+    transform: scale(0);
+    transition: 2s;
+
+}
+
+                          /*________________________________________4 блок__________________________________*/
+.box3 {
+                         /*свойства для 4 блока*/
+    width: 100%;
+    height: 616px;
+    display: flex;
+    margin-top:184px ;
+}
+.pic5 {                       /*свойство для картинки*/
+    padding-left: 131px;
+    width: 652px;
+    height: 609px;
+    padding-right: 109px;
+}
+#title3 {
+    font-family: 'Bebasxl';   /*заголовок страницы*/
+    font-size: 62.5px;
+    line-height: 62px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 400px;
+}
+.card5 {
+    height: 616px;
+    padding-right:123px ;
+    display: flex;
+    flex-direction: column;
+   justify-content:center;
+    align-items:flex-end;
+}
+.p3 {                              /*свойство для текста*/
+    font-family: 'Bebasl';
+    font-size: 37.5px;
+    line-height: 41px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 0;
+    text-align: right;
+}
+.but2 {                                 /*свойство для кнопки*/
+    width: 156px;
+    height: 40px;
+    background-color: #e92bde;
+    text-align: center;
+    font-family:'Bebasl';
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #ffffff;
+    
+}
+.but2:hover {                          /* изменения при наведении на кнопку*/
+    cursor: pointer;
+    background:linear-gradient(184deg, #e92bde 0%, #e586f0 60%, #ecb9f1 100% );
+}
+.but2:hover ~ #okno5 {                 /* всплывающее окно*/
+    background-color: #0101a3;
+    transform:scale(1); 
+    
+      
+} 
+
+
+#okno5 {                      /*свойство для всплывающего окна*/
+    width: 300px;
+    height: 900px;
+    border: #c92fd9 solid 5px;
+    background-color: #0101a3;
+    display: flex;
+    flex-direction: column;
+    transform: scale(0);
+    transition: 2s;
+    justify-content: center;
+    align-items: stretch;
+    font-family: "Bebasl";
+    gap: 5px;
+    color: #fefefe;
+    padding: 5px
+}
+
+
+          /*______________________________________________5 блок_________________________________________________*/
+.box4 {                      /* свойство страницы*/
+    width: 100%;
+    height: 616px;
+    display: flex;
+    margin-top:326px ;   
+ }
+.pic6 {
+    padding-left: 131px;       /* свойство картинки*/
+    width: 652px;
+    height:595px;
+    padding-right: 129px;
+}
+.title4 {
+    font-family: 'Bebasxl';       /* заголовок страницы*/
+    font-size: 62.5px;
+    line-height: 62px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-top: -300px;
+    margin-bottom: -10px;
+}
+.card6 {
+    height: 595px;
+    padding-left:129px ;
+    display: flex;
+    flex-direction: column;
+    align-items: left;   
+}
+.p4 {                                 /*  свойство текста*/
+    font-family: 'Bebasl';
+    font-size: 29.2px;
+    font-weight: 400;
+    color: #ffffff;   
+}
+.but3 {                               /*свойство кнопки*/
+    width: 150px;
+    height: 41px;
+    background-color: #e92bde;
+    font-family:'Bebasl';
+    font-size: 25px;
+    line-height:1.2;
+    font-weight: 400;
+    color: #ffffff;
+ }
+.but3:hover {                               /*изменения при наведении на кнопку*/
+    cursor: pointer;
+    background:linear-gradient(184deg, #e92bde 0%, #e586f0 60%, #ecb9f1 100% );
+        }
+
+
+        
+
+
+/*________________________________________6 блок_____________________________________________*/
+
+
+
+.title5 {
+    font-family:"Bebasxl"; /*свойства для заголовка в соответствии с макетом*/
+    font-size: 62.5px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 0;                                                
+}
+.box5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 182px;
+    background-color:#000086 ;   
+}
+.box6 {
+    width: 1440px;
+    height: 790px;
+    display: flex;
+    gap: 32px; /*расстояние между карточками*/
+    background-color:#000086 ;
+}
+.card7 {
+   width: 373px; /*свойства первой карточкии в соответствии с макетом*/
+   min-height: 420px;
+   padding-left: 133px;
+   padding-top: 95px;
+   display: flex;
+   flex-direction: column;
+   gap: 27px;
+
+}
+.but4:hover ~ .okno6,         /* всплывающие окна*/
+.but4:hover ~ .okno7,
+.but4:hover ~ .okno8 {
+    background-color: #0101a3;
+    transform: scale(1);
+}
+.okno6, .okno7, .okno8 {                 /* свойства для всплывающих окон*/
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 15px;
+    border: #e92bde solid 5px;
+    border-radius: 10px;
+    color: #fefefe;
+    transform: scale(0);
+    transition: 2s;
+    position: absolute;
+}
+.card8 {
+   width:373px; /*свойства в соответствии с макетом*/
+   min-height: 420px;
+   display: flex;
+   flex-direction: column;
+   gap: 27px;
+   padding-top: 95px;
+}
+.card9{
+    width: 373px; /*свойства в соответствии с макетом*/
+   min-height: 420px;
+   display: flex;
+   flex-direction: column;
+   gap: 27px; /*расстояние от картинки до текста*/
+   padding-right:129px;
+   padding-top: 95px;
+}
+
+.but4:hover  { 
+    min-width: 126px; /*свойства в соответствии с макетом*/
+    min-height:34px;
+    background-color: rgb(239, 165, 228); 
+    border: 130px 40px;
+    cursor: pointer; /*курсор мышки меняется при наведении на картинку*/    
+}
+.pic7 img {       /*свойства для всех картинок*/
+    width: 100%;
+    height: 100%;
+    width: 373px;
+    height: 212px;
+      
+}                                            
+.text2, .text3, .text4 { /*свойства для текста */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+}
+.p5 {
+    font-family:"Bebasxl"; /*свойства для текста под картинкой в соответствии с макетом*/
+    font-size: 33.4px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+.p6 {
+    font-family:"Bebasl"; /*свойства для текста под картинкой в соответствии с макетом*/
+    font-size: 16.7px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.but4 {                     /*свойство для кнопки*/
+    width: 126px;
+    height: 34px;
+    background-color: #e92bde;
+    font-family: 'Bebasl';
+    font-size: 16.7px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+                           /*_____________________________________ 7 блок_________________________________________________*/
+
+.box7 {                        /* свойство для страницы*/
+    width: 100%;
+    height: 621px;
+    display: flex;
+    margin-top:168px ;
+    background-color: #0101a3;
+    
+ }
+ .p7 {                             /*  свойство для текста*/
+    font-family: 'Bebasxl';
+    font-size: 58.4px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff; 
+    margin-bottom: 0px;
+
+ }
+ .p8 {                             /* свойство для текста*/
+    font-family: 'Bebasl';
+    font-size: 33.4px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+} 
+   .card10 {                           
+    height: 440px;
+    padding-left:133px ; 
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    width: 425px;
+    margin-top:100px ;
+
+   }   
+    form {                        /*форма для отправки*/
+    max-width: 579px;
+    max-height: 621px;
+    background-color:#e92bde;
+    display: flex;
+    flex-direction: column;
+    margin-left: 176px;
+    margin-right: 130px;
+    padding-top: 50px;
+    padding-left: 51px;
+    padding-right: 54px;
+    padding-top: 54px;
+    gap: 36px;
+    
+   }
+   .l1 {                      /*  свойство для колонок формы   */ 
+    display: flex;
+    margin-right: 0px;
+   }
+   .l2 {                    /*  свойство для колонок формы*/
+    display: flex;
+    margin-left: 0px;
+   }
+   .l3 {                          /*  свойство для колонок формы*/
+    width: 475px;
+    height: 31.5px;
+   }
+   textarea {                         /*   свойство для колонки заполнения*/
+    width: 475px;
+    height: 223px;
+    background-color: #e92bde;
+    border: #ffffff solid 2px;
+   }
+   
+   .l5 {                            /* свойство для текста в форме*/
+    font-family: 'Bebasl';
+    font-size: 12.5px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    display: flex;
+    width: 375px;
+    height: 24px;
+    text-align: left;
+   }
+   .l7 {
+    display: flex;
+    width: 27px;
+    height: 26px;
+    margin-left: 0px;
+   }
+   .l6 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px
+
+   }
+   .l4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   }
+   input {
+    width: 223px;
+    height: 31.5px; 
+    background-color: #e92bde;
+    border: #ffffff solid 2px;
+
+   }
+    
+#p9 {                                    /*заголовок страницы*/
+    font-family: 'Bebasxl';
+    font-size: 33.4px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 0px;
+} 
+.but5 {                               /* свойство для кнопки*/
+    width: 151px;
+    height: 44px;
+    background-color: #e92bde;
+    font-family: 'Bebasxl';
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+ }
+.but5:hover {                     /* изменения при наведении на кнопку*/
+    cursor: pointer;
+    background:linear-gradient(184deg, #e92bde 0%, #e586f0 60%, #ecb9f1 100% );
+ }
+       
+
+::placeholder {                  /*  свойство для текста внутри колонок*/
+    opacity: 0.47;
+    font-family: 'Bebasl';
+    font-size: 20.9px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    padding-left: 11px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}  
+
+
+   /*________________________________ 8 Блок_________________________________________________*/
+
+ .box8  {                             /*свойство для страницы*/
+    width: 1440px;
+    height: 1050px;
+    background-color:#0101a3 ;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+ }
+ .p10 {                             /*свойство для текста*/
+    font-family: 'Bebasxl';
+    font-size: 58.4px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fefefe;
+    text-align: center;
+    margin-top: 155px;
+    margin-bottom: 0px;
+ }
+ .pic10 {                            /*свойство для картинки*/
+    width: 1182px;
+    height: 582px;
+    margin-left: 130px;
+    margin-right: 128px;
+ }
+ .p11 {                                  /*свойство для текста*/
+    font-family: 'Bebasl';
+    font-size: 33.4px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #fefefe;
+    margin-left: 440px;
+    margin-right: 435px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+ }
+
+          /*___________________________9 Блок________________________________________*/
+
+ .box9 {                           /*свойство для страницы*/
+    width: 1440px;
+    height: 450px;
+    background: linear-gradient(to top, #0101a3 0%, #0101a3 40%, #000048 100%);
+
+ }     
+ .log1 {                                  /* свойство для логотипа*/
+    width: 205px;
+    height: 33px;
+    padding-left: 57px;
+    padding-top: 58px;
+    padding-right: 1178px;
+    margin-bottom: 93px;
+
+ }  
+ .col {                                     /*свойство для колонки*/
+    padding-left: 56px;
+    float: left;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+
+ }  
+ .left {
+    width: 70%;
+
+ }
+ .right {
+    width: 30%;
+
+ }
+ 
+ 
+ .p12{                                 /*свойство для текста*/
+    font-family: 'Bebasxl';
+    font-size: 23.4px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fefefe;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 2;
+ }
+
+                   /*_______________________footer________________________*/
+.foot {                                
+    width: 100%;         /*свойство для внутреннего блока*/
+    display: flex;
+    justify-content: space-between;
+    padding-left: 58px;
+    padding-right: 56px;
+
+}
+.footer {
+    width:1440px;              /*свойство для футера*/
+    height: 130px;      
+    border-top: 15px solid #e92bde;
+    display: flex;
+    background-color:#0101a3;  
+
+  
+         
+}
+.foot2 img {                   /* свойство для иконок*/
+    width: 21px;
+    height: 21px;
+    margin-top: 20px;
+}
+.f {                              /* свойство для текста*/
+    font-family: 'Bebasxl';
+    font-size: 23.4px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fefefe;
+}
+.f1 {
+    font-family: 'Bebasl';                   /* свойство для текста*/
+    font-size: 19.6px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #e92bde;
+}
+.f1:hover {
+    cursor: pointer;
+    color: #ecb9f1;
+
+}
+.foot1 {
+    width: 300px;
+    display: flex;
+    padding-top: 25px;
+}
+.foot2 {
+    width: 400px;
+    display: flex;
+    gap: 15px;
+    padding-top: 25px;
+}
